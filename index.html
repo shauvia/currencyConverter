@@ -4,9 +4,40 @@
     <meta charset="utf-8">
     <link rel='stylesheet' href='css/reset.css'>
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@500&display=swap" rel="stylesheet">
     <title>Currency Converter/Konwerter Walut</title>
   </head>
   <body>
-    <header>Currency Converter</header>
+    <header>
+      <h1>Currency Converter</h1>  
+    </header>
+    <form>
+      <label for='money'>How much?</label>
+      <input type='text' id='money'>
+      <label for='currency-select'>Currency</label>
+      <select name='currency' id='currency-select'>
+        <option value='' placeholder='choose a currency'></option> <!--obczaić placeholder w select, jak zrobic pusty, niewybieralny element -->
+         
+        <option value='euraski'>Euraski</option>
+        <option value=''>Złote polske</option>
+        <option value=''>Dolce</option>
+        <option value=''>I jakieś inne</option>
+      </select>
+      <label for='curConverted'>After Conversion</label>
+      <input type="text" id='curConverted'>
+      <label for='curConverted-select'>Currency</label>
+      <select name='currencyConverted' id='currConverted-select'>
+        <option value='' placeholder='choose a currency'></option>
+        <option value='euraski'>Euraski</option>
+        <option value=''>Złote polske</option>
+        <option value=''>Dolce</option>
+        <option value=''>I jakieś inne</option>
+      </select>
+
+      <button type='button'>Submituj</button>
+      
+    </form>
   </body>
 </html>  

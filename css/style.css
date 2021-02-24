@@ -1,0 +1,30 @@
+h1{
+  font-family: 'Megrim', cursive;
+  /* font-family: 'Cinzel Decorative', cursive; */
+}
+body{
+  color: rgb(65, 105, 97);
+  background-color: rgb(247, 247, 255);
+  font-family: 'Jura', sans-serif;
+  /* font-family: 'Cinzel Decorative', cursive; */
+}
+
+button{
+  font-family: 'Jura', sans-serif;
+  background-color: rgb(68, 141, 76);
+  color: rgb(245, 243, 245)
+}
+
+/* Tea Green: rgb(198, 236, 174)
+  Old Lavender: rgb(119, 100, 114)
+  Forest Green Web: rgb(19, 138, 54)
+  Celadon Blue: rgb(36, 123, 160);
+  Beau Blue: rgb(196, 215, 242); 
+  Ghost White: rgb(247, 247, 255)
+  Cultured (some white): rgb(245, 243, 245); 
+  Hunter Green: rgb(38, 83, 43)
+  Polished Pine: rgb(105, 162, 151);
+
+
+
+*/
