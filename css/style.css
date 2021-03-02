@@ -1,6 +1,9 @@
 h1{
+  color: rgb(33, 78, 69);
   font-family: 'Megrim', cursive;
-  /* font-family: 'Cinzel Decorative', cursive; */
+  font-size: 5em;
+  text-align: center;
+  margin-top: 0.5em;
 }
 body{
   color: rgb(65, 105, 97);
@@ -9,11 +12,93 @@ body{
   /* font-family: 'Cinzel Decorative', cursive; */
 }
 
-button{
-  font-family: 'Jura', sans-serif;
-  background-color: rgb(68, 141, 76);
-  color: rgb(245, 243, 245)
+#form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  column-gap: 20px;
+  row-gap: 40px;
+  grid-template-areas: 
+    'lab1 inp1 lab2 inp2'
+    'lab3 divOut lab4 inp4'
+    'butSub  butSub butSub butSub';
+  width: 50%;
+  margin: 10em auto 0 auto;
 }
+
+#labBC {
+  grid-area: lab1;
+  font-size: 2em;
+  justify-self: center;
+}
+
+#beforeConverting {
+  grid-area: inp1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(255, 255, 225);
+  border: 2px rgb(192, 192, 192) solid;
+  text-align: center;
+}
+
+#labCS {
+  grid-area: lab2;
+  font-size: 2em;
+  justify-self: right;
+}
+
+#currency-select {
+  grid-area: inp2;
+  font-family: 'Jura', sans-serif;
+  font-size: 1.1em; 
+  background-color: rgb(255, 255, 225);
+  border: 2px rgb(192, 192, 192) solid;
+}
+  
+
+#labCC {
+  grid-area: lab3;
+  font-size: 2em;
+  justify-self: center;;
+}
+
+#outputDiv {
+  grid-area: divOut;
+  background-color: rgb(217, 239, 252);
+  font-size: 0.8em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: 2px rgb(192, 192, 192) solid;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#labCCS {
+  grid-area: lab4;
+  font-size: 2em;
+  justify-self: right;
+}
+
+#currConverted-select {
+  grid-area: inp4;
+  background-color: rgb(255, 255, 225);
+  font-size: 1.1em;
+  font-family: 'Jura', sans-serif;
+  border: 2px rgb(192, 192, 192) solid;
+}
+
+#generate {
+  font-family: 'Jura', sans-serif;
+  font-size: 1.5em;
+  background-color: rgb(68, 141, 76);
+  color: rgb(245, 243, 245);
+  grid-area: butSub;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  height: 4vh;
+  justify-self: center;
+  border-radius: 7px;
+}
+
 
 /* Tea Green: rgb(198, 236, 174)
   Old Lavender: rgb(119, 100, 114)

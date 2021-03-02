@@ -13,31 +13,42 @@
     <header>
       <h1>Currency Converter</h1>  
     </header>
-    <form>
-      <label for='money'>How much?</label>
-      <input type='text' id='money'>
-      <label for='currency-select'>Currency</label>
+    <form id='form'>
+      <label for='beforeConverting' id='labBC'>I have</label>
+      <input type='text' id='beforeConverting'>
+      <label for='currency-select' id='labCS'>Currency</label>
       <select name='currency' id='currency-select'>
-        <option value='' placeholder='choose a currency'></option> <!--obczaić placeholder w select, jak zrobic pusty, niewybieralny element -->
-         
-        <option value='euraski'>Euraski</option>
-        <option value=''>Złote polske</option>
-        <option value=''>Dolce</option>
-        <option value=''>I jakieś inne</option>
+        <option disabled selected option>select a currency</option>
+        <option value='AUD'>Australian Dollar</option>
+        <option value='CAD'>Canadian Dollar</option>
+        <option value='CZK'>Czech Koruna</option>
+        <option value='EUR'>Euro</option>
+        <option value='MXN'>Mexican Peso</option>
+        <option value='PLN'>Polish Zloty</option>
+        <option value='GBP'>Pound sterling</option>
+        <option value='RUB'>Russian Ruble</option>
+        <option value='CHF'>Swiss Franc</option>
+        <option value='USD'>United States Dollar</option>
       </select>
-      <label for='curConverted'>After Conversion</label>
-      <input type="text" id='curConverted'>
-      <label for='curConverted-select'>Currency</label>
+      <label for='curConverted' id='labCC'>I want</label>
+      <input disabled type='text' id='outputDiv'></input> <!-- zmienić to na jakiś wyłączony disabled input; Ma wyświetlać tylko wynik -->
+      <label for='curConverted-select' id='labCCS'>Currency</label>
       <select name='currencyConverted' id='currConverted-select'>
-        <option value='' placeholder='choose a currency'></option>
-        <option value='euraski'>Euraski</option>
-        <option value=''>Złote polske</option>
-        <option value=''>Dolce</option>
-        <option value=''>I jakieś inne</option>
+        <option disabled selected option>select a currency</option>
+        <option value='AUD'>Australian Dollar</option>
+        <option value='CAD'>Canadian Dollar</option>
+        <option value='CZK'>Czech Koruna</option>
+        <option value='EUR'>Euro</option>
+        <option value='MXN'>Mexican Peso</option>
+        <option value='PLN'>Polish Zloty</option>
+        <option value='GBP'>Pound sterling</option>
+        <option value='RUB'>Russian Ruble</option>
+        <option value='CHF'>Swiss Franc</option>
+        <option value='USD'>United States Dollar</option>
       </select>
-
-      <button type='button'>Submituj</button>
-      
+      <button type='button' id='generate'>Submituj</button>       
     </form>
+    <!-- <button type='button' id='generate'>Submituj</button> -->
   </body>
-</html>  
+  <script src="js/javascript.js"></script>
+</html> 
