@@ -30,7 +30,9 @@ async function performAction(event){
   let calcMoney = calculateTheMoney(baseNum, outsideData.rates[ConvertingCurr]);
   // data.rates['PLN']
   console.log('calcMoney', calcMoney)
-  displayConvertedMoney(Math.round(calcMoney));
+  displayConvertedMoney(Math.round((calcMoney + Number.EPSILON) * 100) / 100);
 }
+
+
 
 document.getElementById('generate').addEventListener('click', performAction);
